@@ -49,20 +49,34 @@ img {
   border: lightgreen 4px solid;
 }
 
+h1, p {
+  margin: 0;
+  padding: 10px 0px 10px 0px;
+}
+
 #occupation {
   background-color: lightgray;
-  padding: 7px 0px 7px 0px
+  padding: 10px 0px 10px 0px;
 }
 
 #brand {
   display: none;
 }
 
+#offer > p {
+  padding: 10px 0px 10px 0px;
+}
+
 #contact {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto;
-  height: 70px;
+  display: flex;
+}
+
+#contact > p {
+  height: 60px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #contact > p:first-child {
@@ -87,16 +101,16 @@ img {
     "contact offer";
   }
 
-  #occupation {
-    padding: 20px 0px 20px 20px
-  }
-
-  section, h1 {
-    padding: 0px 0px 0px 25px;
+  section {
     background-color: lightgray;
   }
 
-  h1, p {
+  h1 {
+    padding: 25px 0px 0px 25px;
+    background-color: lightgray;
+  }
+
+  p {
     margin: 0;
   }
 
@@ -107,25 +121,30 @@ img {
   img {
     grid-area: img;
     margin: 0 auto;
-    width: 120px;
+  }
+
+  #occupation {
+    padding: 0px 0px 10px 15px
   }
 
   #offer {
+    grid-area: offer;
     padding: 20px 0px 0px 20px
   }
 
   #contact {
     background-color: white;
     grid-area: contact;
-    height: 60px;
+    padding-top: 40px;
   }
 
   #brand {
     display: initial; 
+    padding: 0px 0px 0px 20px;
   }
 
   #brand > p {
     border-left: darkgreen 3px solid;
-    padding: 0px 0px 0px 10px
+    padding: 0px 0px 0px 15px
   }
 }
